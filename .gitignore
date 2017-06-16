@@ -1,0 +1,17 @@
+*.class
+
+*.iml
+*.ipr
+*.iws
+*.git
+**/.idea/*
+**/target/*
+**/out/*
+.idea/*
+
+#Myeclipse����
+*.springBeans
+*.project
+*.myhibernatedata
+*.classpath
+**/.settings/*
