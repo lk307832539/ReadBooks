@@ -9,7 +9,7 @@ import java.util.StringTokenizer;
  * Created by LK on 2017/6/17.
  */
 public class test {
-    String a = " Hello world~ a b c ! ";
+    private String a = " Hello world~ a b c ! ";
 
     @Test
     public void testSubString() {
@@ -61,4 +61,8 @@ public class test {
         System.out.println(a.trim());
 
     }
+
+    //todo 写一个扩展和压缩Tab
+
+    //todo 一个简单的文本格式化工具
 }
