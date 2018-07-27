@@ -18,7 +18,7 @@ public class FirstActivity extends AppCompatActivity {
     @Override
     protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
         switch (requestCode) {
-            case 1:{
+            case 1: {
                 if (requestCode == RESULT_OK) {
                     String returnData = data.getStringExtra("data_return");
                     Log.d(TAG, "onActivityResult: " + returnData);
@@ -32,6 +32,9 @@ public class FirstActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+        Log.d(TAG, "onCreate: " + this.toString());
+
         setContentView(R.layout.first_layout);
 
         Button button1 = findViewById(R.id.button_1);
@@ -50,12 +53,14 @@ public class FirstActivity extends AppCompatActivity {
 //                intent.putExtra("extra_data", data);
 //                startActivity(intent);
 
+//                Intent intent = new Intent(FirstActivity.this, SecondActivity.class);
+//                startActivityForResult(intent, 1);
+
                 Intent intent = new Intent(FirstActivity.this, SecondActivity.class);
-                startActivityForResult(intent, 1);
+                startActivity(intent);
 
             }
         });
-
 
 
 //        Button button1_1 = findViewById(R.id.button_1_1);
